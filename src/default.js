@@ -8,7 +8,7 @@ window.addEventListener("resize", function(event) {
 function changeContainerPadding(){
 	var fH = document.getElementsByClassName("footer").offsetHeight;
 	fH = fH + 32;
-	document.getElementsByClassName("container").style.paddingBottom = fH + 'px';
+	document.getElementsByClassName("container").style.paddingBottom = fH.concat('px');
 }
 
 function updateCopyright(){
