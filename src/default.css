@@ -29,6 +29,12 @@ h1,h2,h3,p{
 	text-align: center;
 }
 
+
+.container{
+	padding-top: 24px;
+	margin-bottom: 36px;
+}
+
 .header {
 	padding-top: 36px;
 }
@@ -57,11 +63,6 @@ a:link, a:visited {
 
 a:hover, a:active {
 	color: var(--text-color-footer-hover);
-}
-
-
-.container{
-	padding-top: 24px;
 }
 
 .main-card{
