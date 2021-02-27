@@ -2,7 +2,7 @@ updateCopyright();
 changeContainerPadding();
 
 window.addEventListener("resize", function(event) {
-	changeHeight();
+	changeContainerPadding();
 })
 
 function changeContainerPadding(){
