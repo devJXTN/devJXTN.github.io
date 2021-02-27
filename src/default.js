@@ -6,9 +6,9 @@ window.addEventListener("resize", function(event) {
 })
 
 function changeContainerPadding(){
-	var footerH = $(".footer").height();
-	footerH = footerH + 32;
-	$('.container').css('padding-bottom',footerH + 'px');
+	var fH = document.getElementsByClassName("footer").offsetHeight;
+	fH = fH + 32;
+	document.getElementsByClassName("container").style.paddingBottom = fH + 'px';
 }
 
 function updateCopyright(){
