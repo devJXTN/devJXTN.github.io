@@ -10,7 +10,10 @@
 
     <style type="text/css">
     	body{
-    		font-family: sans-serif;
+		    color: #202124;
+		    font-family: sans-serif;
+		    transition-duration: 0.6s;
+		    -webkit-transition-duration: 0.6s;
     	}
 
     	.container {
@@ -18,11 +21,46 @@
     		text-align: center;
     	}
 
-    	.app_frame{
-    		cursor: pointer;
-    		display: block;
-    		box-shadow: 5px 10px #888888; 
-    	}
+		.app-logo{height: 85px;}
+    	.main-card{
+		    z-index: 2;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    width: 320px;
+		    padding: 28px;
+		    text-align: center;
+		    border-radius: 8px;
+		    background-color: white;
+		    transition-duration: 0.4s;
+		    -webkit-transition-duration: 0.4s;
+		}
+
+		.inner-card{
+		    margin-top: 24px;
+		    text-align: center;
+		    display: inline-block;
+		}
+
+		@media only screen and (max-width: 600px) {
+		    body {
+		        background-color: #fff;
+		    }
+		}
+
+
+		@media only screen and (max-width: 320px) {
+		    body {
+		        background-color: #fff;
+		    }
+
+		    .app-logo{height: auto; width: 100%;}
+
+		    .main-card{
+		        width: 100%;
+		    }
+		}
 
     </style>
 </head>
@@ -34,9 +72,9 @@
 			<h1>DEVJXTN</h1>
 		</div>
 
-		<div class="app_frame" onclick="openApp()">
+		<div class="main-card" onclick="openApp()">
 		
-			<img src="https://play-lh.googleusercontent.com/s1oXvPvvoG-kEEsKhTdPPHnpIm8PsWmKPC5eSOJVD6JHT6PsJ-g08Uj8-efgXqVEQQ=s180-rw" width="200" height="200">
+			<img class="app-logo" src="https://play-lh.googleusercontent.com/s1oXvPvvoG-kEEsKhTdPPHnpIm8PsWmKPC5eSOJVD6JHT6PsJ-g08Uj8-efgXqVEQQ=s180-rw" width="200" height="200">
 			<p>Best LTO Reviewer app for aspiring Filipino drivers, you can use it any time anywhere even without an internet.\nUpdated to the latest official LTO Online Reviewer.</p>
 			
 		</div>
