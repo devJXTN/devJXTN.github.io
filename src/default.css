@@ -38,7 +38,7 @@ h1,h2,h3,p{
 	padding-top: 36px;
 }
 
-.footer{
+#footer{
 	position: fixed;
 	padding: 12px;
 	left: 0;
@@ -48,7 +48,7 @@ h1,h2,h3,p{
 	text-align: center;
 }
 
-.footer li{
+#footer li{
 	color: var(--text-color-footer);
 	display: inline-block;
 	margin:8px;
