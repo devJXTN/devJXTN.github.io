@@ -9,7 +9,7 @@ function changeContainerPadding(){
 	var fH = document.getElementById("footer");
 	var fHpx = fH.clientHeight + "px";
     
-	document.getElementsByClassName("container").style.paddingBottom = fHpx;
+	document.getElementById("container").style.paddingBottom = fHpx;
 }
 
 function updateCopyright(){
