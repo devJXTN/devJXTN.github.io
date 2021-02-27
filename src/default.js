@@ -6,7 +6,7 @@ window.addEventListener("resize", function(event) {
 })
 
 function changeContainerPadding(){
-	var footerH = document.getElementById("footer").style.height;
+	var footerH = $(".footer").height();
 	footerH = footerH + 8;
 	$('.container').css('padding-bottom',footerH + 'px');
 }
