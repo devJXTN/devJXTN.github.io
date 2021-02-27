@@ -69,6 +69,15 @@
 			font-size: 14px;
 		}
 
+		.noselect {
+		  -webkit-touch-callout: none; /* iOS Safari */
+		    -webkit-user-select: none; /* Safari */
+		       -moz-user-select: none; /* Old versions of Firefox */
+		        -ms-user-select: none; /* Internet Explorer/Edge */
+		            user-select: none; /* Non-prefixed version, currently
+		                                  supported by Chrome, Edge, Opera and Firefox */
+		}
+
 		@media only screen and (max-width: 600px) {
 		    body {
 		        background-color: #fff;
@@ -100,9 +109,9 @@
 
 			<div class="main-card" onclick="openApp()">
 			
-				<h3>LTO PH: Exam Reviewer 2021</h3>
+				<h3 class="noselect">LTO PH: Exam Reviewer 2021</h3>
 				<img class="app-logo" src="https://play-lh.googleusercontent.com/s1oXvPvvoG-kEEsKhTdPPHnpIm8PsWmKPC5eSOJVD6JHT6PsJ-g08Uj8-efgXqVEQQ=s180-rw" width="200" height="200">
-				<p class="app-desc">Best LTO Reviewer app for aspiring Filipino drivers, you can use it any time anywhere even without an internet.
+				<p class="app-desc noselect">Best LTO Reviewer app for aspiring Filipino drivers, you can use it any time anywhere even without an internet.
 				Updated to the latest official LTO Online Reviewer.</p>
 				
 			</div>
@@ -118,7 +127,6 @@
 	function openApp(){
 		window.open("https://play.google.com/store/apps/details?id=com.devjxtn.ltoph");
 	}
-
 
 </script>
 </html>
