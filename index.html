@@ -26,9 +26,13 @@
 		    margin: 8px;
 		}
 
-    	.container {
+    	.container, .header {
     		vertical-align: center;
     		text-align: center;
+    	}
+
+    	.header {
+    		padding-top: 24px;
     	}
 
     	.main-card{
@@ -81,21 +85,23 @@
     </style>
 </head>
 <body>
-	<div class="header"></div>
-	<main>
-		<div class="container">
+	<div class="header">
 			<h2>Hello, I am</h2>
 			<h1>DEVJXTN</h1>
 			<p>Here's my app galery</p>
-		</div>
+	</div>
+	<main>
+		<div class="container">
 
-		<div class="main-card" onclick="openApp()">
-		
-			<h3>LTO PH: Exam Reviewer 2021</h3>
-			<img class="app-logo" src="https://play-lh.googleusercontent.com/s1oXvPvvoG-kEEsKhTdPPHnpIm8PsWmKPC5eSOJVD6JHT6PsJ-g08Uj8-efgXqVEQQ=s180-rw" width="200" height="200">
-			<p>Best LTO Reviewer app for aspiring Filipino drivers, you can use it any time anywhere even without an internet.
-			Updated to the latest official LTO Online Reviewer.</p>
+			<div class="main-card" onclick="openApp()">
 			
+				<h3>LTO PH: Exam Reviewer 2021</h3>
+				<img class="app-logo" src="https://play-lh.googleusercontent.com/s1oXvPvvoG-kEEsKhTdPPHnpIm8PsWmKPC5eSOJVD6JHT6PsJ-g08Uj8-efgXqVEQQ=s180-rw" width="200" height="200">
+				<p>Best LTO Reviewer app for aspiring Filipino drivers, you can use it any time anywhere even without an internet.
+				Updated to the latest official LTO Online Reviewer.</p>
+				
+			</div>
+
 		</div>
 	</main>
 	<div class="footer"></div>
