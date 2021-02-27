@@ -14,6 +14,10 @@
     		text-align: center;
     	}
 
+    	.app_frame{
+    		cursor: pointer;
+    	}
+
     </style>
 </head>
 <body>
@@ -23,7 +27,23 @@
 			<p>Hello, I am</p>
 			<p>DEVJXTN</p>
 		</div>
+
+		<div class="app_frame" onclick="openApp()">
+		
+			<img src="https://play-lh.googleusercontent.com/s1oXvPvvoG-kEEsKhTdPPHnpIm8PsWmKPC5eSOJVD6JHT6PsJ-g08Uj8-efgXqVEQQ=s180-rw" width="200" height="200">
+			
+		</div>
 	</main>
 	<div class="footer"></div>
 </body>
+
+
+<script type="text/javascript">
+	
+	function openApp(){
+		window.open("https://play.google.com/store/apps/details?id=com.devjxtn.ltoph");
+	}
+
+
+</script>
 </html>
