@@ -9,6 +9,11 @@
     <meta name="keywords" content="devjxtn, ltoph, lto philippines, lto professional license, lto non-professional license, com.devjxtn.ltoph, lto exam reviewer, lto examination, lto online exam, lto online exam 2021, lto online exam reviewer, lto student license">
 
     <style type="text/css">
+	    :root {
+	        --text-color-main:#333333;
+	        --text-color-footer:#404040;
+	        --text-color-footer-hover:#1aa3ff;
+	    }
 
     	* {
 		    margin:  0;
@@ -27,7 +32,7 @@
 		}
 
 		h1,h2,h3,p{
-		    color: #333333;
+		    color: var(--text-color-main);
 		}
 
     	.container, .header {
@@ -50,18 +55,19 @@
     	}
 
     	.footer li{
-    		color: #404040;
+    		color: var(--text-color-footer);
     		display: inline-block;
     		margin:8px;
     		font-size: 12px;
     	}
+    	
     	a:link, a:visited {
-    		color: #404040;
+    		color: var(--text-color-footer);
 			text-decoration: none;
 		}
 
 		a:hover, a:active {
-			color: #1aa3ff;
+			color: var(--text-color-footer-hover);
 		}
 
 
