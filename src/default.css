@@ -24,13 +24,13 @@ h1,h2,h3,p{
 	color: var(--text-color-main);
 }
 
-.container, .header {
+#container, .header {
 	vertical-align: center;
 	text-align: center;
 }
 
 
-.container{
+#container{
 	padding-top: 24px;
 }
 
