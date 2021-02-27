@@ -93,6 +93,10 @@ a:hover, a:active {
 	font-size: 14px;
 }
 
+.dev-name{
+	font-size: 42px;
+}
+
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
