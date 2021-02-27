@@ -1,4 +1,15 @@
 updateCopyright();
+changeHeight();
+
+window.addEventListener("resize", function(event) {
+	var footerH = document.getElementById("footer").style.height;
+	var footerH = footerH + 8;
+	document.getElementById("container").style.paddingBottom = footerH + "px";
+})
+
+function changeHeight(){
+	document.getElementById("container").style.paddingBottom = "62px";
+}
 
 function updateCopyright(){
 	var d = new Date();
