@@ -1,5 +1,6 @@
 [{
-	"version":"3",
+	"version":"56",
 	"min_version":"1",
-	"latest_version":"7"
+	"latest_version":"56",
+	"total_exam": "1717"
 }]
