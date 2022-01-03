@@ -1,7 +1,7 @@
 [{
-	"version":"67",
-	"min_version":"67",
-	"latest_version":"67",
+	"version":"75",
+	"min_version":"75",
+	"latest_version":"75",
 	"total_exam": "1723",
-	"remt_db_version": "24"
+	"remt_db_version": "25"
 }]
