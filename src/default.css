@@ -126,8 +126,8 @@ a:hover, a:active {
 
 	.container{
 		display: inline-block;
-		width: calc(100% - 24px);
-		margin: 12px;
+		width: calc(100% - 48px);
+		margin: 24px;
 	}
 
 }
