@@ -24,6 +24,10 @@ h1,h2,h3,p{
 	color: var(--text-color-main);
 }
 
+.dvapps {
+	display: inline-block;
+}
+
 #container, .header {
 	vertical-align: center;
 	text-align: center;
