@@ -24,7 +24,7 @@ h1,h2,h3,p{
 	color: var(--text-color-main);
 }
 
-.dvapps {
+.dvapps div{
 	display: inline-block;
 }
 
