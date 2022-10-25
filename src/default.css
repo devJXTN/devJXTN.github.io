@@ -10,41 +10,55 @@
 }
 
 body{
-	min-width: 224px;
 	font-family: sans-serif;
 	transition-duration: 0.6s;
 	-webkit-transition-duration: 0.6s;
 }
 
 h1,h2,h3{
-	margin: 8px;
+	margin: 12px;
+	font-family: sans-serif;
+	font-size: 24px;
 }
 
 h1,h2,h3,p{
 	color: var(--text-color-main);
+	line-height: 1.6;
 }
 
-.dvapps div{
-	display: inline-block;
-	text-align: center;
-}
-
-#container, .header {
+.header {
 	vertical-align: center;
 	text-align: center;
 }
 
 
-#container{
+.container{
+	flex: 1;
+	text-align: center;
+	background-color: #e6fff2;
+	margin: 24px;
 	padding-top: 24px;
+	padding-bottom: 24px;
+	border-radius: 50px;
 }
+
+.container:hover{
+	box-shadow: 0 3px 10px 2px #888888;
+}
+
+.col-main{
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 15%;
+}
+
 
 .header {
 	padding-top: 36px;
 }
 
 #footer{
-	position: fixed;
 	padding: 12px;
 	left: 0;
 	bottom: 0;
@@ -70,22 +84,12 @@ a:hover, a:active {
 }
 
 .main-card{
-
-	margin-left: auto;
-	margin-right: auto;
+	vertical-align: middle;
 	cursor: pointer;
-	width: 216px;
-	padding: 8px;
+	padding: 24px;
 	text-align: center;
-	border-radius: 6px;
-	border: 3px solid #e6e6e6;
-	background-color: white;
 	transition-duration: 0.4s;
 	-webkit-transition-duration: 0.4s;
-}
-
-.main-card:hover{
-	box-shadow: 0 3px 10px 2px #888888;
 }
 
 .inner-card{
@@ -111,10 +115,21 @@ a:hover, a:active {
 		            supported by Chrome, Edge, Opera and Firefox */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 560px) {
 	body {
 		background-color: #fff;
 	}
+
+	.col-main{
+		display: block;
+	}
+
+	.container{
+		display: inline-block;
+		width: calc(100% - 24px);
+		margin: 12px;
+	}
+
 }
 
 
@@ -124,7 +139,4 @@ a:hover, a:active {
 		padding: 12px;
 	}
 
-	.main-card{
-		width: 100%;
-	}
 }
