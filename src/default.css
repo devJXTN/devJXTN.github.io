@@ -10,6 +10,7 @@
 }
 
 body{
+	background-color: #f2f2f2;
 	font-family: sans-serif;
 	transition-duration: 0.6s;
 	-webkit-transition-duration: 0.6s;
@@ -35,22 +36,16 @@ h1,h2,h3,p{
 .container{
 	flex: 1;
 	text-align: center;
-	background-color: #e6fff2;
+	background-color: #ffffff;
 	margin: 24px;
 	padding-top: 24px;
 	padding-bottom: 24px;
 	border-radius: 50px;
 }
 
-.container:hover{
-	box-shadow: 0 3px 10px 2px #888888;
-}
-
 .col-main{
   display: flex;
   width: 100%;
-  margin-top: 12px;
-  margin-bottom: 15%;
 }
 
 
@@ -85,8 +80,8 @@ a:hover, a:active {
 
 .main-card{
 	vertical-align: middle;
-	cursor: pointer;
 	padding: 24px;
+	height: calc(100% - 118px);
 	text-align: center;
 	transition-duration: 0.4s;
 	-webkit-transition-duration: 0.4s;
@@ -102,6 +97,37 @@ a:hover, a:active {
 	font-size: 14px;
 }
 
+.app-logo{
+	max-width: 100%;
+  height: auto;
+	border-radius: 15px;
+}
+
+.container a.app-link{
+	vertical-align: bottom;
+}
+
+.app-link img{
+	max-height: 55px;
+	height: auto;
+	border-radius: 5px;
+}
+
+.app-link img:hover{
+}
+
+.app-link img:last-child {
+  display: none;  
+}
+.app-link:hover img:last-child {
+	display: inline-block;
+	box-shadow: 0 3px 10px 2px #e6e6e6;
+}
+.app-link:hover img:first-child {
+	display: none;
+	box-shadow: 0 3px 10px 2px #e6e6e6;
+}
+
 .dev-name{
 	font-size: 42px;
 }
@@ -115,11 +141,7 @@ a:hover, a:active {
 		            supported by Chrome, Edge, Opera and Firefox */
 }
 
-@media only screen and (max-width: 605px) {
-	body {
-		background-color: #fff;
-	}
-
+@media only screen and (max-width: 720px) {
 	.col-main{
 		display: block;
 	}
@@ -133,10 +155,13 @@ a:hover, a:active {
 }
 
 
-@media only screen and (max-width: 244px) {
-	body {
-		background-color: #fff;
-		padding: 12px;
+@media only screen and (max-width: 500px) {
+	
+
+	.app-link img{
+		height: auto;
+		max-width: 50%;
+		height: auto;
 	}
 
 }
