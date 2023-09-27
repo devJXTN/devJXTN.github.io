@@ -123,6 +123,11 @@ a:hover, a:active {
   font-size: 18px;
 }
 
+.p_courrier{
+  font-family: monospace;
+}
+
+
 .app-logo{
   max-width: 100%;
   height: auto;
