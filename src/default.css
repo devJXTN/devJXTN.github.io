@@ -1,12 +1,12 @@
 :root {
-	--text-color-main:#262626;
-	--text-color-footer:#404040;
-	--text-color-footer-hover:#1aa3ff;
+  --text-color-main:#262626;
+  --text-color-footer:#404040;
+  --text-color-footer-hover:#1aa3ff;
 }
 
 * {
-	margin:  0;
-	padding: 0;
+  margin:  0;
+  padding: 0;
 }
 
 /* width */
@@ -32,37 +32,41 @@
 }
 
 body{
-	background-color: #f2f2f2;
-	font-family: sans-serif;
-	transition-duration: 0.6s;
-	-webkit-transition-duration: 0.6s;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
 }
 
 h1,h2,h3{
-	margin: 12px;
-	font-family: sans-serif;
-	font-size: 24px;
+  margin: 12px;
+  font-family: sans-serif;
+  font-size: 26px;
 }
 
 h1,h2,h3,p{
-	color: var(--text-color-main);
-	line-height: 1.6;
+  color: var(--text-color-main);
+  line-height: 1.6;
+}
+
+p{
+  font-size: 18px;
 }
 
 .header {
-	vertical-align: center;
-	text-align: center;
+  vertical-align: center;
+  text-align: center;
 }
 
 
 .container{
-	flex: 1;
-	text-align: center;
-	background-color: #ffffff;
-	margin: 24px;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	border-radius: 50px;
+  flex: 1;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 50px;
 }
 
 .col-main{
@@ -72,67 +76,67 @@ h1,h2,h3,p{
 
 
 .header {
-	padding-top: 36px;
+  padding-top: 36px;
 }
 
 #footer{
-	padding: 12px;
-	left: 0;
-	bottom: 0;
-	width: calc(100% - 24px);
-	background-color: #f2f2f2;
-	text-align: center;
+  padding: 12px;
+  left: 0;
+  bottom: 0;
+  width: calc(100% - 24px);
+  background-color: #f2f2f2;
+  text-align: center;
 }
 
 #footer li{
-	color: var(--text-color-footer);
-	display: inline-block;
-	margin:8px;
-	font-size: 12px;
+  color: var(--text-color-footer);
+  display: inline-block;
+  margin:8px;
+  font-size: 16px;
 }
 
 a:link, a:visited {
-	color: var(--text-color-footer);
-	text-decoration: none;
+  color: var(--text-color-footer);
+  text-decoration: none;
 }
 
 a:hover, a:active {
-	color: var(--text-color-footer-hover);
+  color: var(--text-color-footer-hover);
 }
 
 .main-card{
-	vertical-align: middle;
-	padding: 24px;
-	height: calc(100% - 118px);
-	text-align: center;
-	transition-duration: 0.4s;
-	-webkit-transition-duration: 0.4s;
+  vertical-align: middle;
+  padding: 24px;
+  height: calc(100% - 118px);
+  text-align: center;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
 }
 
 .inner-card{
-	margin-top: 24px;
-	text-align: center;
-	display: inline-block;
+  margin-top: 24px;
+  text-align: center;
+  display: inline-block;
 }
 
 .app-desc{
-	font-size: 14px;
+  font-size: 18px;
 }
 
 .app-logo{
-	max-width: 100%;
+  max-width: 100%;
   height: auto;
-	border-radius: 15px;
+  border-radius: 15px;
 }
 
 .container a.app-link{
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 .app-link img{
-	max-height: 55px;
-	height: auto;
-	border-radius: 5px;
+  max-height: 55px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .app-link img:hover{
@@ -142,48 +146,48 @@ a:hover, a:active {
   display: none;  
 }
 .app-link:hover img:last-child {
-	display: inline-block;
-	box-shadow: 0 3px 10px 2px #e6e6e6;
+  display: inline-block;
+  box-shadow: 0 3px 10px 2px #e6e6e6;
 }
 .app-link:hover img:first-child {
-	display: none;
-	box-shadow: 0 3px 10px 2px #e6e6e6;
+  display: none;
+  box-shadow: 0 3px 10px 2px #e6e6e6;
 }
 
 .dev-name{
-	font-size: 42px;
+  font-size: 42px;
 }
 
 .noselect {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
-		            supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                supported by Chrome, Edge, Opera and Firefox */
 }
 
 @media only screen and (max-width: 720px) {
-	.col-main{
-		display: block;
-	}
+  .col-main{
+    display: block;
+  }
 
-	.container{
-		display: inline-block;
-		width: calc(100% - 48px);
-		margin: 24px;
-	}
+  .container{
+    display: inline-block;
+    width: calc(100% - 48px);
+    margin: 24px;
+  }
 
 }
 
 
 @media only screen and (max-width: 500px) {
-	
+  
 
-	.app-link img{
-		height: auto;
-		max-width: 50%;
-		height: auto;
-	}
+  .app-link img{
+    height: auto;
+    max-width: 50%;
+    height: auto;
+  }
 
 }
