@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.devjxtn.karsada",
+      "sha256_cert_fingerprints": [
+        "DD:1E:25:88:38:A8:DA:B8:15:02:4D:10:85:8C:55:1E:86:3F:F1:0F:4D:A9:DF:7E:1F:22:06:21:3C:FC:29:F2"
+      ]
+    }
+  }
+]
